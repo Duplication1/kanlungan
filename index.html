@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanlungan Coffee Garage</title>
+  <meta name="description" content="Kanlungan Coffee Garage: strong coffee, good company, and a place to park yourself.">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#top" class="brand" aria-label="Kanlungan Coffee Garage home">
+    <img src="logo.jpg" alt="" width="44" height="44">
+    <span>Kanlungan</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav">
+    <a href="#about">Our Shelter</a>
+    <a href="#menu">Service Menu</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact" class="nav-cta">Reserve a bay</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="open-status" id="openStatus">Checking the garage door…</p>
+      <h1>Pull in.<br>Fuel up.<br>Stay a while.</h1>
+      <p class="lead">Kanlungan means shelter. Ours has a roll-up door, loud speakers, and coffee strong enough to restart a dead battery.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn">See the menu</a>
+        <a href="#visit" class="btn btn-ghost">Find the garage</a>
+      </div>
+    </div>
+    <img class="hero-logo" src="logo.jpg" alt="Kanlungan Coffee Garage logo: a yellow K on a shield with crossed wrenches" width="520" height="520">
+  </section>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+  <section id="about" class="section about">
+    <h2>A shelter for<br>people who tinker.</h2>
+    <div class="about-copy">
+      <p>Kanlungan started with a simple idea: everyone needs a place to land after the road. Ours is a converted garage where the beans are roasted in small batches and the tools on the wall are real.</p>
+      <p>Bring your laptop, your sketchbook, your bike club, or your Tita. There's always a stool open and a cup waiting.</p>
+      <ul class="facts">
+        <li><strong>Small-batch</strong> Philippine beans from Benguet, Sagada and Bukidnon</li>
+        <li><strong>Free Wi-Fi</strong> and plenty of outlets</li>
+        <li><strong>Bikes and cars</strong> welcome in the front lot</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="menu" class="section menu">
+    <h2>The service menu</h2>
+    <div class="tabs" role="tablist" aria-label="Menu categories">
+      <button role="tab" class="tab active" data-filter="all" aria-selected="true">All jobs</button>
+      <button role="tab" class="tab" data-filter="coffee" aria-selected="false">Coffee</button>
+      <button role="tab" class="tab" data-filter="cold" aria-selected="false">Cold</button>
+      <button role="tab" class="tab" data-filter="bites" aria-selected="false">Bites</button>
+    </div>
+
+    <ul class="tickets" id="tickets">
+      <li class="ticket" data-cat="coffee"><div class="t-head"><h3>The Tune-Up</h3><span class="price">₱120</span></div><p>Double espresso, straight and honest.</p></li>
+      <li class="ticket" data-cat="coffee"><div class="t-head"><h3>Piston Flat White</h3><span class="price">₱150</span></div><p>Velvety milk over a double shot.</p></li>
+      <li class="ticket" data-cat="coffee"><div class="t-head"><h3>Barako Overhaul</h3><span class="price">₱140</span></div><p>Batangas barako, brewed bold and black.</p></li>
+      <li class="ticket" data-cat="coffee"><div class="t-head"><h3>Spanish Latte</h3><span class="price">₱170</span></div><p>Sweetened condensed milk, no apologies.</p></li>
+      <li class="ticket" data-cat="cold"><div class="t-head"><h3>Cold Engine</h3><span class="price">₱160</span></div><p>16-hour cold brew over ice.</p></li>
+      <li class="ticket" data-cat="cold"><div class="t-head"><h3>Ube Coolant</h3><span class="price">₱180</span></div><p>Iced ube latte with sea salt cream.</p></li>
+      <li class="ticket" data-cat="cold"><div class="t-head"><h3>Calamansi Tonic</h3><span class="price">₱150</span></div><p>Espresso, calamansi and sparkling water.</p></li>
+      <li class="ticket" data-cat="bites"><div class="t-head"><h3>Pit Stop Pandesal</h3><span class="price">₱110</span></div><p>Warm pandesal with kesong puti and honey.</p></li>
+      <li class="ticket" data-cat="bites"><div class="t-head"><h3>Wrench Toast</h3><span class="price">₱190</span></div><p>Thick toast, tuyo aioli, fried egg.</p></li>
+      <li class="ticket" data-cat="bites"><div class="t-head"><h3>Tapsilog Torque</h3><span class="price">₱220</span></div><p>Beef tapa, garlic rice, egg. Full tank.</p></li>
+    </ul>
+    <p class="note">Prices are samples. Swap in your own before launch.</p>
+  </section>
+
+  <section id="visit" class="section visit">
+    <div>
+      <h2>Visit the garage</h2>
+      <p class="addr">Your Street Name, Your City<br>Landmark or nearest intersection</p>
+      <p>Parking for bikes and cars right out front.</p>
+    </div>
+    <table class="hours">
+      <caption class="sr-only">Opening hours</caption>
+      <tbody>
+        <tr data-days="1,2,3,4,5"><th scope="row">Mon–Fri</th><td>7:00 AM – 9:00 PM</td></tr>
+        <tr data-days="6"><th scope="row">Saturday</th><td>8:00 AM – 11:00 PM</td></tr>
+        <tr data-days="0"><th scope="row">Sunday</th><td>8:00 AM – 8:00 PM</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+  <section id="contact" class="section contact">
+    <h2>Reserve a bay</h2>
+    <p>Booking a group, a meetup, or a small event? Tell us when and how many.</p>
+    <form id="bookForm" novalidate>
+      <label>Name<input type="text" name="name" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Date<input type="date" name="date" required></label>
+      <label>Group size<input type="number" name="size" min="1" max="40" value="4" required></label>
+      <button class="btn" type="submit">Send request</button>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <img src="logo.jpg" alt="Kanlungan Coffee Garage" width="120" height="120">
+  <p>&copy; <span id="year"></span> Kanlungan Coffee Garage. Park it here.</p>
+  <p class="socials"><a href="https://www.facebook.com/profile.php?id=61589808854073" target="_blank" rel="noopener noreferrer">Facebook</a> <a href="https://www.instagram.com/kanlungan_coffee_garage/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://www.tiktok.com/@kanlungancoffeegarage" target="_blank" rel="noopener noreferrer">TikTok</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
